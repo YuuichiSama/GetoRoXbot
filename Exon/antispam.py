@@ -186,13 +186,13 @@ def detect_user(user_id, chat_id, message, parsing_date):
             if message.chat.type != "private":
                 dispatcher.bot.sendMessage(
                     chat_id,
-                    "ғʟᴏᴏᴅ ᴍᴇssᴀɢᴇ ᴡᴀs ᴅᴇᴛᴇᴄᴛᴇᴅ!\nI'ᴍ ᴏᴜᴛ, ɪɴᴠɪᴛᴇ ᴍᴇ ᴀɢᴀɪɴ ɪғ ᴛʜᴇ ғʟᴏᴏᴅ ʜᴀs sᴛᴏᴘᴘᴇᴅ 🙂\n\nᴛʜᴀɴᴋs",
+                    "ғʟᴏᴏᴅ ᴍᴇssᴀɢᴇ ᴡᴀs ᴅᴇᴛᴇᴄᴛᴇᴅ!\n─────────────────────────\nI'ᴍ ᴏᴜᴛ, ɪɴᴠɪᴛᴇ ᴍᴇ ᴀɢᴀɪɴ ɪғ ᴛʜᴇ ғʟᴏᴏᴅ ʜᴀs sᴛᴏᴘᴘᴇᴅ...",
                 )
                 dispatcher.bot.leaveChat(chat_id)
                 return True
         dispatcher.bot.sendMessage(
             chat_id,
-            "ʜᴇɪ! sᴍᴀʀᴛ ᴀɴᴛɪғʟᴏᴏᴅ ᴡᴀs ᴅᴇᴛᴇᴄᴛᴇᴅ ғᴏʀ ᴛʜɪs ᴜsᴇʀ!\n\nʏᴏᴜ ᴡɪʟʟ ʙᴇ ʀᴇsᴛʀɪᴄᴛᴇᴅ ғᴏʀ ᴀ ᴡʜɪʟᴇ.\n\nɪғ ʏᴏᴜ sᴛɪʟʟ ᴄᴏɴᴛɪɴᴜᴇs ɪ ᴡɪʟʟ ʙᴀɴ ᴀɴᴅ ᴄʀᴇᴀᴛᴇ ᴀ sᴘᴀᴍ ʀᴇᴘᴏʀᴛ ғᴏʀ ᴛʜɪs ᴜsᴇʀ!",
+            "ʜᴇʏ! sᴍᴀʀᴛ ᴀɴᴛɪғʟᴏᴏᴅ ᴡᴀs ᴅᴇᴛᴇᴄᴛᴇᴅ ғᴏʀ ᴛʜɪs ᴜsᴇʀ!\n─────────────────────────\nʏᴏᴜ ᴡɪʟʟ ʙᴇ ʀᴇsᴛʀɪᴄᴛᴇᴅ ғᴏʀ ᴀ ᴡʜɪʟᴇ.\n\nɪғ ʏᴏᴜ sᴛɪʟʟ ᴄᴏɴᴛɪɴᴜᴇs ɪ ᴡɪʟʟ ʙᴀɴ ᴀɴᴅ ᴄʀᴇᴀᴛᴇ ᴀ sᴘᴀᴍ ʀᴇᴘᴏʀᴛ ғᴏʀ ᴛʜɪs ᴜsᴇʀ!",
             reply_to_message_id=message.message_id,
         )
         return True
