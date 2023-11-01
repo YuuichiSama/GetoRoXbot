@@ -29,12 +29,12 @@ StartTime = time.time()
 
 
 def get_user_list(__init__, key):
-    with open("{}/Gᴇᴛᴏ Sᴜɢᴜʀᴜ/{}".format(os.getcwd(), __init__), "r") as json_file:
+    with open("{}/Exon/{}".format(os.getcwd(), __init__), "r") as json_file:
         return json.load(json_file)[key]
 
 
 # enable logging
-FORMAT = "[Gᴇᴛᴏ Sᴜɢᴜʀᴜ] %(message)s"
+FORMAT = "[ᴇxᴏɴ] %(message)s"
 logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
@@ -48,7 +48,7 @@ logging.getLogger("ptbcontrib.postgres_persistence.postgrespersistence").setLeve
     logging.WARNING
 )
 
-LOGGER = logging.getLogger("[Gᴇᴛᴏ Sᴜɢᴜʀᴜ]")
+LOGGER = logging.getLogger("[ᴇxᴏɴ]")
 LOGGER.info("Gᴇᴛᴏ Sᴜɢᴜʀᴜ ɪs sᴛᴀʀᴛɪɴɢ. | ᴀɴ ᴀʙɪsʜɴᴏɪᴍғ ᴘʀᴏᴊᴇᴄᴛ ᴘᴀʀᴛs. | ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ɢᴘʟᴠ3.")
 
 try:
