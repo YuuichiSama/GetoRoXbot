@@ -43,16 +43,19 @@ PM_START_TEX = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="❣ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ❣︎", url=f"t.me/{BOT_USERNAME}?startgroup=new"
+            text="⚜ꜱᴜᴍᴍᴏɴ ᴍᴇ⚜", url=f"t.me/{BOT_USERNAME}?startgroup=new"
         ),
     ],
     [
-        InlineKeyboardButton(text=f"🚁 ʜᴇʟᴘ 🚁", callback_data="help_back"),
-        InlineKeyboardButton(text=f"🥀 sᴛᴀᴛs 🥀", callback_data="stats_callback"),
+        InlineKeyboardButton(text=f"ʜᴇʟᴘ", callback_data="help_back"),
+        InlineKeyboardButton(text=f"sᴛᴀᴛs", callback_data="stats_callback"),
     ],
     [
-        InlineKeyboardButton(text="🏡 ᴀʙᴏᴜᴛ 🏡", callback_data="ABG_"),
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="ABG_"),
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/Spartans_mainchat"),
+    ],
+    [
+        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"tg://user?id={OWNER_ID}"),
     ],
 ]
 
@@ -117,7 +120,7 @@ def send_help(chat_id, text, keyboard=None):
 
     if not keyboard:
         kb = paginate_modules(0, HELPABLE, "help")
-        # kb.append([InlineKeyboardButton(text='sᴜᴘᴘᴏʀᴛ', url='https://t.me/AbishnoiMF'),
+        # kb.append([InlineKeyboardButton(text='sᴜᴘᴘᴏʀᴛ', url='https://t.me/Spartans_mainchat'),
         #           InlineKeyboardButton(text='ʙᴀᴄᴋ', callback_data='start_back'),
         #           InlineKeyboardButton(text="ᴛʀʏ ɪɴʟɪɴᴇ", switch_inline_query_current_chat="")])
         keyboard = InlineKeyboardMarkup(kb)
@@ -239,10 +242,14 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(0.4)
-            lol.edit_text("🎊")
+            lol.edit_text("❄️")
             time.sleep(0.5)
             lol.edit_text("⚡")
             time.sleep(0.3)
+            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ. ")
+            time.sleep(0.4)
+            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ.. ")
+            time.sleep(0.4)
             lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
             time.sleep(0.4)
             lol.delete()
@@ -348,7 +355,7 @@ def help_button(update: Update, context: CallbackContext):
         elif prev_match:
             curr_page = int(prev_match.group(1))
             kb = paginate_modules(curr_page - 1, HELPABLE, "help")
-            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/Exon'),
+            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/Spartans_MainChat'),
             #           InlineKeyboardButton(text='Back', callback_data='start_back'),
             #           InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
             query.message.edit_text(
@@ -360,7 +367,7 @@ def help_button(update: Update, context: CallbackContext):
         elif next_match:
             next_page = int(next_match.group(1))
             kb = paginate_modules(next_page + 1, HELPABLE, "help")
-            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/Exon'),
+            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/Spartans_MainChat'),
             #           InlineKeyboardButton(text='Back', callback_data='start_back'),
             #           InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
             query.message.edit_text(
@@ -371,7 +378,7 @@ def help_button(update: Update, context: CallbackContext):
 
         elif back_match:
             kb = paginate_modules(0, HELPABLE, "help")
-            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/Exon'),
+            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/Spartans_MainChat'),
             #           InlineKeyboardButton(text='Back', callback_data='start_back'),
             #           InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
             query.message.edit_text(
@@ -691,7 +698,7 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 animation="https://te.legra.ph/file/8dea393ddf4fc2e339179.gif",
                 caption=f"""
-ㅤ🥀 {dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ ✨ .....
+ㅤ⌥ {dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ 🫧...
 
 ━━━━━━━━━━━━━
 ⍟ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/{OWNER_USERNAME})
