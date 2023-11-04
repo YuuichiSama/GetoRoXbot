@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 ABIAHNOI69 
+Copyright (c) 2022 RealKronos69 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -189,7 +189,7 @@ async def fetch_audio(client, message):
         await runcmd(stark_cmd)
         final_warner = "friday.mp3"
     elif warner_stark.audio:
-        lel = await edit_or_reply(message, "`ᴅᴏᴡɴʟᴏᴀᴅ sᴛᴀʀᴛᴇᴅ !`")
+        lel = await edit_or_reply(message, "<b>ᴅᴏᴡɴʟᴏᴀᴅ sᴛᴀʀᴛᴇᴅ!!!</b>")
         final_warner = await message.reply_to_message.download()
     await lel.edit("`ᴀʟᴍᴏsᴛ ᴅᴏɴᴇ!`")
     await lel.delete()
@@ -319,7 +319,7 @@ def admins_only(func: Callable) -> Coroutine:
     return wrapper
 
 
-# @Mr_Dark_Prince
+# @RealKronoS
 def capture_err(func):
     @wraps(func)
     async def capture(client, message, *args, **kwargs):
@@ -347,7 +347,7 @@ def capture_err(func):
     return capture
 
 
-# @Abishnoi1M
+# @RealKronoS
 
 
 async def member_permissions(chat_id, user_id):
