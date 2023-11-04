@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 ABIAHNOI69 
+Copyright (c) 2022 RealKronos69 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -201,7 +201,7 @@ async def fetch_audio(client, message):
     elif warner_stark.audio:
         lel = await edit_or_reply(message, "`Download Started !`")
         final_warner = await message.reply_to_message.download()
-    await lel.edit("`Almost Done!`")
+    await lel.edit("`Almost Done!!!`")
     await lel.delete()
     return final_warner
 
