@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 ABIAHNOI69 
+Copyright (c) 2022 RealKronos69 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -44,7 +44,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-# Convert seconds to mm:ss @AbishnoiMF
+# Convert seconds to mm:ss @Realkronos
 async def convert_seconds_to_minutes(seconds: int):
     seconds = int(seconds)
     seconds %= 24 * 3600
