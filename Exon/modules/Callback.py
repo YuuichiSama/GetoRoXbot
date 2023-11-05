@@ -195,7 +195,7 @@ def Source_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ɢᴏ ʙᴀᴄᴋ",callback_data="start_back"),
+                            text="ɢᴏ ʙᴀᴄᴋ",callback_data="start_back"
                         ),
                     ],
                 ]
