@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 ABISHNOI69
+Copyright (c) 2022 RealKronos69
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -23,9 +23,9 @@ SOFTWARE.
 """
 
 # ""DEAR PRO PEOPLE,  DON'T REMOVE & CHANGE THIS LINE
-# TG :- @Abishnoi1m
-#     UPDATE   :- Abishnoi_bots
-#     GITHUB :- ABISHNOI69 ""
+# TG :- @Realkronos
+#     UPDATE   :- Spartans_mainchat
+#     GITHUB :- RealKronos69 ""
 import html
 import random
 import re
@@ -224,20 +224,20 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    f"ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {html.escape(chat.title)} ᴍʏ ᴅᴀʀʟɪɴɢ.",
+                    f"ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {html.escape(chat.title)} ᴍʏ ʙᴏʏ.",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
-                    f"ᴍʏ ᴅᴀʀʟɪɴɢ ʜᴀꜱ ᴄᴏᴍᴇ ᴛᴏ ᴛʜɪꜱ ɢʀᴏᴜᴘ ꜰᴏʀ ᴍᴀᴋᴇ ᴛʜᴇᴇ ᴄʜɪʟᴅ ᴡɪᴛʜ ᴍᴇ"
+                    f"ʙᴀᴅᴍᴏꜱʜ ᴀʀʀɪᴠᴇᴅ!"
                 )
                 continue
 
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "ᴡʜᴏᴀ! ᴛʜᴇ ᴅᴇꜱᴛʀᴏʏᴇʀꜱ ᴊᴜꜱᴛ ᴀʀʀɪᴠᴇᴅ!",
+                    "ᴡʜᴏᴀ! ᴛʜᴇ ᴄʜᴀᴘʀɪ ʙᴇʀᴏᴢɢᴀᴀʀ ᴊᴜꜱᴛ ᴀʀʀɪᴠᴇᴅ!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -245,7 +245,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "ʜᴜʜ! ꜱʜᴀᴅᴏᴡ ꜱʟᴀʏᴇʀ ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ! ꜱᴛᴀʏ ᴀʟᴇʀᴛ!",
+                    "ᴏʜʜ ʏᴇᴀʜʜ! ʙᴀᴅᴍᴏꜱʜ ᴊᴜꜱᴛ ᴀʀʀɪᴠᴇᴅ! ꜱᴛᴀʏ ᴀʟᴇʀᴛ!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -253,7 +253,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "ʜᴜʜ! ꜱᴏᴍᴇᴏɴᴇ ᴡɪᴛʜ ɢᴜʀᴅɪᴀɴ ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ!",
+                    "ʜᴜʜ! ꜱᴏᴍᴇᴏɴᴇ ᴡɪᴛʜ ʙʟᴀᴄᴋ ɴᴜᴛꜱ ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -268,7 +268,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome yourself
             elif new_mem.id == bot.id:
                 update.effective_message.reply_text(
-                    f"ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ! ᴊᴏɪɴ @{AbishnoiMF} ꜰᴏʀ ꜱᴜᴘᴘᴏʀᴛ.",
+                    f"ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ! ᴊᴏɪɴ @{Spartans_MainChat} ꜰᴏʀ ꜱᴜᴘᴘᴏʀᴛ.",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -633,14 +633,14 @@ def left_member(update: Update, context: CallbackContext):  # sourcery no-metric
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "ꜱᴇᴇ ʏᴏᴜ ᴀᴛ ʜᴏᴍᴇ ᴍʏ ᴅᴀʀʟɪɴɢ :(", reply_to_message_id=reply
+                    "ꜱᴇᴇ ᴏᴜ ʟᴀᴛᴇʀ, ꜰᴀᴛʜᴇʀ:(", reply_to_message_id=reply
                 )
                 return
 
             # Give the devs a special goodbye
             elif left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "ꜱᴇᴇ ʏᴏᴜ ʟᴀᴛᴇʀ ᴀᴛ ᴛʜᴇ ꜱᴜᴋᴜʀᴀ ᴇᴍᴘɪʀᴇ",
+                    "ꜱᴇᴇ ʏᴏᴜ ʟᴀᴛᴇʀ ᴀᴛ ᴛʜᴇ ꜱᴘᴀʀᴛᴀɴꜱ ᴇᴍᴘɪʀᴇ",
                     reply_to_message_id=reply,
                 )
                 return
@@ -1378,7 +1378,7 @@ def get_help(chat):
     return [
         gs(chat, "greetings_help"),
         [
-            InlineKeyboardButton(text="ᴡᴇʟᴄᴏᴍᴇᴇ ᴍᴜᴛᴇꜱ", callback_data="wlc_help_m"),
+            InlineKeyboardButton(text="ᴡᴇʟᴄᴏᴍᴇ ᴍᴜᴛᴇꜱ", callback_data="wlc_help_m"),
             InlineKeyboardButton(text="ᴡᴇʟᴄᴏᴍᴇ ꜰᴏʀᴍᴀᴛᴛɪɴɢ", callback_data="wlc_help_h"),
         ],
     ]
