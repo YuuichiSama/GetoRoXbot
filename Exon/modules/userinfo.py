@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 ABISHNOI69
+Copyright (c) 2022 RealKronos69
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -315,7 +315,7 @@ def info(update: Update, context: CallbackContext):
         if spamwtc:
             text += "\n\n<b>ᴛʜɪs ᴘᴇʀsᴏɴ ɪs sᴘᴀᴍᴡᴀᴛᴄʜᴇᴅ!</b>"
             text += f"\nʀᴇᴀꜱᴏɴ: <pre>{spamwtc.reason}</pre>"
-            text += "\nᴀᴘᴘᴇᴀʟ ᴀᴛ @AbishnoiMF"
+            text += "\nᴀᴘᴘᴇᴀʟ ᴀᴛ @RealKronoS"
     except:
         pass  # don't crash if api is down somehow...
 
@@ -339,12 +339,12 @@ def info(update: Update, context: CallbackContext):
     elif user.id in WOLVES:
         text += "\n\nThe level for this user is Villain"
         disaster_level_present = True
-    elif user.id == 5938660179:
+    elif user.id == 5494845582:
         text += "\n\nᴄᴏ-ᴏᴡᴇʀɴ ᴏғ ᴀ ʙᴏᴛ."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/Abishnoi_bots/60">ʟᴇᴠᴇʟʟɪɴɢ</a>]'.format(
+        text += ' [<a href="https://t.me/kronoxbotz">ʟᴇᴠᴇʟʟɪɴɢ</a>]'.format(
             bot.username,
         )
 
@@ -381,10 +381,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/Abishnoi_bots/60"
+                                "ʜᴇᴀʟᴛʜ", url="https://t.me/kronoxbotz"
                             ),
                             InlineKeyboardButton(
-                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/Abishnoi_bots/60"
+                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/kronoxbotz"
                             ),
                         ],
                     ]
@@ -401,10 +401,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/Abishnoi_bots/60"
+                                "ʜᴇᴀʟᴛʜ", url="https://t.me/kronoxbotz"
                             ),
                             InlineKeyboardButton(
-                                "ʟᴇᴠᴇʟʟɪɴɢ", url="https://t.me/Abishnoi_bots/60"
+                                "ʟᴇᴠᴇʟʟɪɴɢ", url="https://t.me/kronoxbotz"
                             ),
                         ],
                     ]
@@ -517,8 +517,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + "\n\n[⍙ ɢɪᴛʜᴜʙ](https://github.com/Abishnoi69/ExonRobot) | ⍚\n\n "
-            + "╘══「 by [ᴀʙɪsʜɴᴏɪ](github.com/Abishnoi69) 」\n",
+            + "\n\n[⍙ ɢɪᴛʜᴜʙ](https://t.me/kronoxbotz) | ⍚\n\n "
+            + "╘══「 by [ᴋʀᴏɴᴏꜱ](https://t.me/realkronos) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
             disable_web_page_preview=True,
@@ -531,9 +531,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + "\n\n⍙ [ɢɪᴛʜᴜʙ](https://github.com/Abishnoi69/ExonRobot) | ⍚ \n\n"
+                    + "\n\n⍙ [ɢɪᴛʜᴜʙ](https://t.me/kronoxbotz) | ⍚ \n\n"
                 )
-                + "╘══「 by [ᴅʏɴᴀᴍɪᴄ](github.com/Abishnoi69) 」\n"
+                + "╘══「 by [ᴅʏɴᴀᴍɪᴄ](https://t.me/realkronos) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
@@ -548,7 +548,7 @@ def pingCallback(update: Update, context: CallbackContext):
     requests.get("https://api.telegram.org")
     end_time = time.time()
     ping_time = round((end_time - start_time) * 1000, 3)
-    query.answer("ᴘᴏɴɢ 🌺! {}ms".format(ping_time))
+    query.answer("ᴘᴏɴɢ! {}ms".format(ping_time))
 
 
 @Exoncmd(command="bio")
