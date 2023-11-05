@@ -1,7 +1,7 @@
 # ""DEAR PRO PEOPLE,  DON'T REMOVE & CHANGE THIS LINE
-# TG :- @Abishnoi1M
-#     MY ALL BOTS :- Abishnoi_bots
-#     GITHUB :- KingAbishnoi ""
+# TG :- @Realkronos
+#     MY ALL BOTS :- Spartans_mainchat
+#     GITHUB :- Realkronos69 ""
 
 from platform import python_version as y
 
@@ -12,16 +12,16 @@ from telethon import __version__ as s
 
 from Exon import Abishnoi as pbot
 
-ABISHNOIX = "https://te.legra.ph/file/abfc49a1cc4b5629dc8cd.jpg"
+ABISHNOIX = "https://telegra.ph/file/083b33e7d5898a6446e75.jpg"
 
 
 @pbot.on_cmd("repo")
 async def repo(_, message):
     await message.reply_photo(
         photo=ABISHNOIX,
-        caption=f"""✨ **ʜᴇʏ {message.from_user.mention},**
+        caption=f"""⚡ **ʜᴇʏ {message.from_user.mention},**
 
-**ᴏᴡɴᴇʀ  : [𝐀ʙɪꜱʜɴᴏɪ](https://t.me/Abishnoi1M)**
+**ᴏᴡɴᴇʀ  : [𝐊ʀᴏɴᴏꜱ](https://t.me/Realkronos)**
 **ᴘʏᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ :** `{y()}`
 **ʟɪʙʀᴀʀʏ ᴠᴇʀꜱɪᴏɴ :** `{o}`
 **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ :** `{s}`
@@ -31,10 +31,10 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "•ᴍᴜꜱɪᴄ•", url="https://github.com/Abishnoi69/AsuXMusic"
+                        "•ᴍᴜꜱɪᴄ•", url="https://telegra.ph/file/d1f792800cf543daf2bf4.mp4"
                     ),
                     InlineKeyboardButton(
-                        "•ʀᴏʙᴏᴠ1•", url="https://github.com/Abishnoi69/ExonRobot"
+                        "•ʀᴏʙᴏᴠ1•", url="https://telegra.ph/file/d1f792800cf543daf2bf4.mp4"
                     ),
                 ]
             ]
