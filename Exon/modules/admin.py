@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 ABISHNOI69
+Copyright (c) 2022 RealKronos69
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -23,9 +23,9 @@ SOFTWARE.
 """
 
 # ""DEAR PRO PEOPLE,  DON'T REMOVE & CHANGE THIS LINE
-# TG :- @Abishnoi1m
-#     UPDATE   :- Abishnoi_bots
-#     GITHUB :- ABISHNOI69 ""
+# TG :- @realkronos
+#     UPDATE   :- Kronoxbotz
+#     GITHUB :- RealKronos69 ""
 import asyncio
 import html
 import os
@@ -279,7 +279,7 @@ def promote(update: Update, context: CallbackContext) -> Optional[str]:
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text("ᴍᴇɴᴛɪᴏɴ ᴏɴᴇ.... 🤷🏻‍♂.")
+        message.reply_text("ᴍᴇɴᴛɪᴏɴ ᴏɴᴇ.....")
         return ""
 
     user_member = chat.get_member(user_id)
@@ -326,10 +326,10 @@ def promote(update: Update, context: CallbackContext) -> Optional[str]:
         [
             [
                 InlineKeyboardButton(
-                    text="⏬ ᴅᴇᴍᴏᴛᴇ",
+                    text="⏬[[ᴅᴇᴍᴏᴛᴇ]]",
                     callback_data="demote_({})".format(user_member.user.id),
                 ),
-                InlineKeyboardButton(text="ᴄʟᴏsᴇ ⛔", callback_data="close2"),
+                InlineKeyboardButton(text="⛔ ᴄʟᴏsᴇ ⛔", callback_data="close2"),
             ]
         ]
     )
@@ -358,7 +358,7 @@ def promote(update: Update, context: CallbackContext) -> Optional[str]:
 
 
 close_keyboard = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("🔄 ᴄᴀᴄʜᴇ", callback_data="close2")]]
+    [[InlineKeyboardButton("🔄 ᴄᴀᴄʜᴇ 🔄", callback_data="close2")]]
 )
 
 
@@ -379,7 +379,7 @@ def fullpromote(update, context):
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text("ᴍᴇɴᴛɪᴏɴ ᴏɴᴇ.... 🤷🏻‍♂.")
+        message.reply_text("ᴍᴇɴᴛɪᴏɴ ᴏɴᴇ.....")
         return ""
 
     user_member = chat.get_member(user_id)
@@ -651,10 +651,10 @@ def pin(update: Update, context: CallbackContext) -> str:
                     [
                         [
                             InlineKeyboardButton(
-                                text="📝 ᴠɪᴇᴡ ᴍᴇssᴀɢᴇs", url=f"{message_link}"
+                                text="ᴠɪᴇᴡ ᴍᴇssᴀɢᴇs", url=f"{message_link}"
                             ),
                             InlineKeyboardButton(
-                                text="❌ ᴅᴇʟᴇᴛᴇ", callback_data="close2"
+                                text="ᴅᴇʟᴇᴛᴇ", callback_data="close2"
                             ),
                         ]
                     ]
@@ -676,7 +676,7 @@ def pin(update: Update, context: CallbackContext) -> str:
 
 
 close_keyboard = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("❌ ᴅᴇʟᴇᴛᴇ", callback_data="close2")]]
+    [[InlineKeyboardButton("ᴅᴇʟᴇᴛᴇ", callback_data="close2")]]
 )
 
 
@@ -856,11 +856,11 @@ async def admins(client, message):
         try:
             owner = ownerList[0]
             if owner.username == None:
-                text2 += f"👑 ᴏᴡɴᴇʀ\n└ {owner.mention}\n\n👮🏻 ᴀᴅᴍɪɴs\n"
+                text2 += f"ᴏᴡɴᴇʀ\n└ {owner.mention}\n\nᴀᴅᴍɪɴs\n"
             else:
-                text2 += f"👑 ᴏᴡɴᴇʀ\n└ @{owner.username}\n\n👮🏻 ᴀᴅᴍɪɴs\n"
+                text2 += f"ᴏᴡɴᴇʀ\n└ @{owner.username}\n\nᴀᴅᴍɪɴs\n"
         except:
-            text2 += f"👑 ᴏᴡɴᴇʀ\n└ <i>Hidden</i>\n\n👮🏻 ᴀᴅᴍɪɴs\n"
+            text2 += f"ᴏᴡɴᴇʀ\n└ <i>Hidden</i>\n\nᴀᴅᴍɪɴs\n"
         if len(adminList) == 0:
             text2 += "└ <i>ᴀᴅᴍɪɴs ᴀʀᴇ ʜɪᴅᴅᴇɴ</i>"
             await Abishnoi.send_message(message.chat.id, text2)
