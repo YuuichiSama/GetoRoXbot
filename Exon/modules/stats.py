@@ -45,14 +45,15 @@ async def bot_sys_stats():
     disk = psutil.disk_usage("/").percent
     process = psutil.Process(os.getpid())
     stats = f"""
-------------------
-⛖ {BOT_NAME} ᴜᴘᴛɪᴍᴇ : {formatter.get_readable_time((bot_uptime))}
-⛖ ʙᴏᴛ ᴄᴀᴘᴀᴄɪᴛʏ : {round(process.memory_info()[0] / 1024 ** 2)} ᴍʙ
-⛖ ᴄᴘᴜ ᴜsᴀɢᴇ : {cpu}%
-⛖ ʀᴀᴍ ᴜsᴀɢᴇ : {mem}%
-⛖ ᴅɪsᴋ ᴜsᴀɢᴇ : {disk}%
-⛖ ᴜsᴇʀs : 0{users_db.num_users()} ᴜsᴇʀs.
-⛖ ɢʀᴏᴜᴘs : 0{users_db.num_chats()} ɢʀᴏᴜᴘs.
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+🔘 {BOT_NAME} ᴜᴘᴛɪᴍᴇ : {formatter.get_readable_time((bot_uptime))}
+🔘 ʙᴏᴛ ᴄᴀᴘᴀᴄɪᴛʏ : {round(process.memory_info()[0] / 1024 ** 2)} ᴍʙ
+🔘 ᴄᴘᴜ ᴜsᴀɢᴇ : {cpu}%
+🔘 ʀᴀᴍ ᴜsᴀɢᴇ : {mem}%
+🔘 ᴅɪsᴋ ᴜsᴀɢᴇ : {disk}%
+🔘 ᴜsᴇʀs : 0{users_db.num_users()} ᴜsᴇʀs.
+🔘 ⛖ ɢʀᴏᴜᴘs : 0{users_db.num_chats()} ɢʀᴏᴜᴘs.
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 """
 
     return stats
