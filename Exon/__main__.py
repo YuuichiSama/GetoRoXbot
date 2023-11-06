@@ -43,19 +43,19 @@ PM_START_TEX = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="⚜ ˹ꜱᴜᴍᴍᴏɴ ᴍᴇ˼ ⚜", url=f"t.me/{BOT_USERNAME}?startgroup=new"
+            text="⛩ ˹ꜱᴜᴍᴍᴏɴ ᴍᴇ˼ ⛩", url=f"t.me/{BOT_USERNAME}?startgroup=new"
         ),
     ],
     [
-        InlineKeyboardButton(text=f"˹ʜᴇʟᴘ˼", callback_data="help_back"),
+        InlineKeyboardButton(text=f"🍁 ˹ʜᴇʟᴘ˼ 🍁", callback_data="help_back"),
         InlineKeyboardButton(text=f"˹sᴛᴀᴛs˼", callback_data="stats_callback"),
     ],
     [
         InlineKeyboardButton(text="˹ᴀʙᴏᴜᴛ˼", callback_data="ABG_"),
-        InlineKeyboardButton(text="˹ꜱᴜᴘᴘᴏʀᴛ˼", url="https://t.me/Spartans_mainchat"),
+        InlineKeyboardButton(text="👾 ˹ꜱᴜᴘᴘᴏʀᴛ˼ 👾", url="https://t.me/Spartans_mainchat"),
     ],
     [
-        InlineKeyboardButton(text="˹ᴅᴇᴠᴇʟᴏᴘᴇʀ˼", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="🫧 ˹ᴅᴇᴠᴇʟᴏᴘᴇʀ˼ 🫧", url=f"tg://user?id={OWNER_ID}"),
     ],
 ]
 
