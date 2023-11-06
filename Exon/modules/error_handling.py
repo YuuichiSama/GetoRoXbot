@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 ABISHNOI69
+Copyright (c) 2022 RealKronos69
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -23,9 +23,9 @@ SOFTWARE.
 """
 
 # ""DEAR PRO PEOPLE,  DON'T REMOVE & CHANGE THIS LINE
-# TG :- @Abishnoi1m
-#     UPDATE   :- Abishnoi_bots
-#     GITHUB :- ABISHNOI69 ""
+# TG :- @RealKronos
+#     UPDATE   :- kronoxbotz
+#     GITHUB :- RealKronos69 ""
 import html
 import io
 import random
@@ -54,7 +54,7 @@ class ErrorsDict(dict):
 
     def __contains__(self, error):
         self.raw.append(error)
-        error.identifier = "".join(random.choices("ABCDEFGHIJKLMNOPQRSTUVWXYZ", k=5))
+        error.identifier = "".join(random.choices("0987654321ABCDKRONSPI", k=5))
         for e in self:
             if type(e) is type(error) and e.args == error.args:
                 self[e] += 1
@@ -126,7 +126,7 @@ def error_callback(update: Update, context: CallbackContext):
             context.bot.send_document(
                 ERROR_LOGS,
                 open("error.txt", "rb"),
-                caption=f"#{context.error.identifier}\n<b>ʏᴏᴜʀ ᴄᴜᴛᴇ ᴇxᴏɴ ʜᴀᴠᴇ ᴀɴ ᴇʀʀᴏʀ ғᴏʀ ʏᴏᴜ:"
+                caption=f"#{context.error.identifier}\n<b>๏ ɢᴇᴛᴏ ꜱᴜɢᴜʀᴜ ʜᴀᴠᴇ ᴀɴ ᴇʀʀᴏʀ ғᴏʀ ʏᴏᴜ:"
                 f"</b>\n<code>{e}</code>",
                 parse_mode="html",
             )
@@ -135,10 +135,10 @@ def error_callback(update: Update, context: CallbackContext):
         url = f"https://spaceb.in/{response['payload']['id']}"
         context.bot.send_message(
             ERROR_LOGS,
-            text=f"#{context.error.identifier}\n<b>Your Cute Exon Nagisa Have An Error For You:"
+            text=f"#{context.error.identifier}\n<b>➻ ɢᴇᴛᴏ ꜱᴜɢᴜʀᴜ Have An Error For You:"
             f"</b>\n<code>{e}</code>",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("sᴇxʏ ᴇxᴏɴ ᴇʀʀᴏʀ ʟᴏɢs", url=url)]],
+                [[InlineKeyboardButton("ɢᴇᴛᴏ ꜱᴜɢᴜʀᴜ ᴇʀʀᴏʀ ʟᴏɢs", url=url)]],
             ),
             parse_mode=ParseMode.HTML,
         )
