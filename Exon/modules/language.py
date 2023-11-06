@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 ABISHNOI69
+Copyright (c) 2022 RealKronos69
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -23,9 +23,9 @@ SOFTWARE.
 """
 
 # ""DEAR PRO PEOPLE,  DON'T REMOVE & CHANGE THIS LINE
-# TG :- @Abishnoi1m
-#     UPDATE   :- Abishnoi_bots
-#     GITHUB :- ABISHNOI69 ""
+# TG :- @Realkronos
+#     UPDATE   :- kronoxbotz
+#     GITHUB :- RealKronos69 ""
 import itertools
 from collections.abc import Iterable
 from typing import Generator, List, Union
@@ -82,7 +82,7 @@ def set_lang(update: Update, _) -> None:
         [
             InlineKeyboardButton(
                 text="ʜᴇʟᴘ ᴜs ɪɴ ᴛʀᴀɴsʟᴀᴛɪᴏɴs",
-                url="https://github.com/Abishnoi69/ExonRobot",  # plz. Don't edit and change
+                url="https://t.me/kronoxbotz",  # plz. Don't edit and change
             )
         ]
     )
