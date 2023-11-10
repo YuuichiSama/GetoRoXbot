@@ -52,7 +52,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="˹ᴀʙᴏᴜᴛ˼", callback_data="ABG_"),
-        InlineKeyboardButton(text="👾 ˹ꜱᴜᴘᴘᴏʀᴛ˼ 👾", url="https://t.me/Spartans_mainchat"),
+        InlineKeyboardButton(text="👾 ˹ꜱᴜᴘᴘᴏʀᴛ˼ 👾", url="https://t.me/Weebs_Unity"),
     ],
     [
         InlineKeyboardButton(text="🫧 ˹ᴅᴇᴠᴇʟᴏᴘᴇʀ˼ 🫧", url=f"tg://user?id={OWNER_ID}"),
